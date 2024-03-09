@@ -1,0 +1,31 @@
+<!-- login.html -->
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="login" onsubmit="return false;">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <label for="loginAs">Login As:</label>
+            <select id="loginAs">
+                <option value="patient">Patient</option>
+                <option value="doctor">Doctor</option>
+                <option value="hospital">Hospital</option>
+            </select>
+            <button onclick="login()">Login</button>
+        </form>
+        <p>Don't have an account? <a href="reg.html">Register here</a></p>
+    </div>
+    <script src="{% static 'logscript.js' %}"></script>
+</body>
+</html>

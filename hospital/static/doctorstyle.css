@@ -1,0 +1,99 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('bg (2).jpg') center center fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navigation li {
+    margin-left: 1rem;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 500px;
+    height: auto;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.profile-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    margin-right: 2rem;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.profile-image {
+    align-self: flex-end;
+}
+
+.profile-image img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.hospital-details {
+    margin-bottom: 2rem;
+}
+
+.hospital-details p {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.additional-content {
+    padding: 20px;
+}

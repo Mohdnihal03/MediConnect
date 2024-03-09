@@ -1,0 +1,222 @@
+/* styles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('bg (2).jpg') center center fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo p {
+    font-size: 1.5em;
+    margin: 0;
+    color: #fff;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navigation li {
+    margin-left: 1rem;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+}
+.container {
+    max-width: 400px;
+    height: 400px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.profile-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    margin-right: 2rem;
+}
+
+
+form {
+    margin-top: 20px;
+    text-align: center; /* Center the content within the form */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    text-align: left;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+    }
+}
+/* hospitalstyles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('bg (2).jpg') center center fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navigation li {
+    margin-left: 1rem;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.profile-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    margin-right: 2rem;
+}
+
+.profile-header img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.hospital-details {
+    margin-bottom: 2rem;
+}
+
+.hospital-details p {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.additional-content {
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for links */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}

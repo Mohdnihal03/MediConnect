@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Registration Page</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <form id="registrationForm" onsubmit="return false;">
+            <label for="registerAs">Register As:</label>
+            <select id="registerAs" onchange="toggleFormFields()">
+                <option value="patient">Patient</option>
+                <option value="doctor">Doctor</option>
+                <option value="hospital">Hospital</option>
+            </select>
+
+            <!-- Common fields for all -->
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+            <label for="contactNumber">Contact Number:</label>
+            <input type="text" id="contactNumber" required>
+
+            <!-- Fields specific to patient -->
+            <div id="patientFields" style="display:none;">
+                <label for="dateOfBirth">Date of Birth:</label>
+                <input type="date" id="dateOfBirth" required>
+                <label for="gender">Gender:</label>
+                <select id="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <label for="address">Address:</label>
+                <textarea id="address" required></textarea>
+            </div>
+
+            <!-- Fields specific to doctor -->
+            <div id="doctorFields" style="display:none;">
+                <label for="specialization">Specialization:</label>
+                <input type="text" id="specialization" required>
+                <label for="hospitalId">Hospital ID:</label>
+                <input type="text" id="hospitalId" required>
+            </div>
+
+            <!-- Fields specific to hospital -->
+            <div id="hospitalFields" style="display:none;">
+                <label for="hospitalName">Hospital Name:</label>
+                <input type="text" id="hospitalName" required>
+                <label for="location">Location:</label>
+                <input type="text" id="location" required>
+            </div>
+
+            <button onclick="submitRegistration()">Register</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+
+    <script src="regscript.js"></script>
+</body>
+</html>
